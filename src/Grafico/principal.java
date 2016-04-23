@@ -258,7 +258,7 @@ public class principal extends javax.swing.JFrame {
         if(nf.isValido()){
             f = new Ferreteria(nf.getRazonSocial(), nf.getDireccion(), nf.getTitular(), 500);
             try {
-                operacionesSQL.instancia().crerF(f);
+                operacionesSQL.instancia().crearF(f);
             } catch (ErrorCreacionFerreteria ex) {
                 Logger.getLogger(principal.class.getName()).log(Level.SEVERE, null, ex);
             }
