@@ -22,7 +22,7 @@ public class operacionesSQL {
         return operacion;
     }
     
-    public void crerF (Ferreteria f) throws ErrorCreacionFerreteria{
+    public void crearF (Ferreteria f) throws ErrorCreacionFerreteria{
         try{
             ConexionBD.instancia().getStatement().execute(
             "Insert into Ferreterias values ('"+f.getRazonSocial()+"','"
